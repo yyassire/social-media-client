@@ -49,13 +49,13 @@ const Stories = () => {
         )}
 
         <span>{currentUser?.username}</span>
-        <label className="button" htmlFor="file">
+        <label className="button" htmlFor="myfile">
           {/* <button htmlFor="file">+</button> */}+
         </label>
 
         <input
           type="file"
-          id="file"
+          id="myfile"
           style={{ display: "none" }}
           onChange={upload}
         />

@@ -17,7 +17,7 @@ const Share = () => {
   const [desc, setDesc] = useState("");
   const [imageUrl, setImageUrl] = useState("");
 
-  const upload = async (e) => {
+  const myUpload = async (e) => {
     setFile(e.target.files[0]);
     const myFile = e.target.files[0];
     if (!myFile) return alert("you must choose an image file");
@@ -77,11 +77,11 @@ const Share = () => {
           <div className="left">
             <input
               type="file"
-              id="file"
+              id="thefile"
               style={{ display: "none" }}
-              onChange={upload}
+              onChange={myUpload}
             />
-            <label htmlFor="file">
+            <label htmlFor="thefile">
               <div className="item">
                 <img src={Image} alt="" />
                 <span>Add Image</span>
